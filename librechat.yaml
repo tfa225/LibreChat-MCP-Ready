@@ -1,0 +1,31 @@
+# Configuration version (required)
+version: 1.2.1
+
+# Enable GitHub MCP
+mcpServers:
+  github:
+    type: sse
+    url: https://mcp-web-github.inkeep.com/sse
+    timeout: 60000  # 1 minute timeout
+
+# GitHub plugin configuration
+plugins:
+  github:
+    enabled: true
+    apiKey: ''  # Add your GitHub personal access token here
+
+# Cache settings: Set to true to enable caching
+cache: true
+
+# Custom interface configuration
+interface:
+  customWelcome: "Welcome to LibreChat with GitHub MCP Integration!"
+  endpointsMenu: true
+  modelSelect: true
+  parameters: true
+  sidePanel: true
+  presets: true
+  prompts: true
+  bookmarks: true
+  multiConvo: true
+  agents: true
